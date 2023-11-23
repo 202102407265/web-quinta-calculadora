@@ -1,0 +1,43 @@
+.logo {
+    height: 42px;
+    width: 42px;
+}
+
+.nome-sistema {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.cor-fundo {
+    background-color: #eceff1;
+}
+
+.titulo {
+    border-bottom: 1px solid lightgray;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.cabecalho-tabela {
+    border-radius: 5px;
+    color: #364658;
+    background-color: #cfdcea;
+}
+
+.desativo {
+    background-color: #cfd8dc !important;
+}
+
+.resultado {
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.label {
+    font-family: 'Roboto' !important;
+    font-weight: 500;
+    font-size: 16px;
+}

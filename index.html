@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web5a</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="cor-fundo">
+    <nav class="navbar bg-primary" data-bs-theme="dark">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col">
+                    <img class="logo" src="images/heart-pulse.webp" alt="heart-pulse">          
+                    <span class="navbar-brand nome-sistema">Web5a</span>
+                </div>
+            </div>
+            <div class="row">
+                <span class="navbar-brand mb-0 h1 text-start nome-sistema">Calculadora de Custo Benefício de Planos de Saúde</span>
+            </div>
+        </div>
+    </nav>
+    <div class="container container-fluid">
+        <main class="pt-5">
+            <div class="p-3 mt-3 resultado col">
+                <div class="row">
+                    <div class="col">
+                        <label class="label" for="nome">Nome do Beneficiário</label>
+                        <input id="nome" type="text" name="nome" class="form-control"/>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col col-3">
+                        <label class="label" for="idade">Idade</label>
+                        <input id="idade" type="text" name="idade" class="form-control" />
+                    </div>
+                    <div class="col col-3">
+                        <label class="label" for="peso">Peso</label>
+                        <input id="peso" type="text" name="peso" class="form-control" />
+                    </div>
+                    <div class="col col-3">
+                        <label class="label" for="altura">Altura</label>
+                        <input id="altura" type="text" name="altura" class="form-control" />
+                    </div>
+                    <div class="col col-3 pt-4">
+                        <button id="botaoCalcularOferta" type="button" class="btn btn-primary">Calcular Ofertas</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 mt-3 resultado col">
+                <div class="row pt-2">
+                    <div class="col col-6">
+                        <label class="label" for="imc">IMC</label>
+                        <input id="imc" type="text" name="imc" class="form-control desativo" disabled/>
+                    </div>
+                    <div class="col col-6">
+                        <label class="label" for="comorbidade">Comorbidade</label>
+                        <input id="comorbidade" type="text" name="comorbidade" class="form-control desativo" disabled/>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <div class="row pt-2">
+                        <div class="col">
+                            <legend class="titulo">Melhor Oferta</legend>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="operadora">Operadora</label>
+                            <input id="operadora" type="text" name="operadora" class="form-control desativo" disabled/>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col col-8">
+                            <label for="plano">Plano</label>
+                            <input id="plano" type="text" name="plano" class="form-control desativo" disabled/>
+                        </div>
+                        <div class="col col-4">
+                            <label for="preco">Preço</label>
+                            <input id="preco" type="text" name="preco" class="form-control desativo" disabled/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col">
+                        <legend class="titulo">Extrato</legend>
+                        <table class="table table-light table-striped table-hover table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Operadora</th>
+                                    <th>Plano</th>
+                                    <th>Preço</th>
+                                </tr>
+                            </thead>
+                            <tbody id="extrato"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    <div>
+    <script src="js/util.js"></script>
+    <script src="js/calculadora.js"></script>
+    <script src="js/inicializa.js"></script>
+</body>
+</html>
